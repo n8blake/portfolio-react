@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function About(){
-
-    const [ aboutInfo, setAboutInfo ] = useState([]);
+function Projects(){
 
     return(
         <div>
-            <p>About page data.</p>
+            <p>Projects page.</p>
         </div>
     )
 
 }
 
-export default About;
+export default Projects;
