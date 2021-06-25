@@ -1,3 +1,3 @@
 module.exports = {
-    PortfolioItem: require("./portfolioItem")
+    PortfolioItem: require("./portfolioItem.js")
 };
