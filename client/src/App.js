@@ -13,6 +13,7 @@ function App(props) {
       <Header />
       <Router>
         <Nav />
+        <div className="container">
         <Switch>
           <Route exact path={["/", "/about"]}>
             <About />
@@ -24,6 +25,7 @@ function App(props) {
             <NoMatch />
           </Route>
         </Switch>
+        </div>
       </Router>
     </div>
   );

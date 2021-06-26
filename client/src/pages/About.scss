@@ -1,0 +1,29 @@
+@import '../theme-colors.scss';
+
+section>img {
+	width: 200pt;
+	height: 200pt;
+	border-radius: 50%;
+	float: left;
+	margin: 20pt; 
+	margin-left: 0pt;
+	shape-outside: circle(50%);
+}
+
+.section.active {
+	display: block;
+}
+
+p>a {
+	text-decoration: none;
+	color: tint(#023859, 20%);
+}
+
+p>a:hover {
+	color: shade(#023859, 20%);
+	text-decoration: underline;
+}
+
+p>a:active {
+	color: shade(#023859, 60%);
+}
