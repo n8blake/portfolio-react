@@ -1,7 +1,7 @@
 @import '../theme-colors.scss';
 
 .modal-backdrop {
-	background-color: none;
+	background-color: #0000;
 	opacity: 1;
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
@@ -18,7 +18,7 @@
 	transform: translate(-50%, -50%);
 	max-height: 90%;
 	max-width: 90%;
-	filter: drop-shadow(0 0 0.75rem map-get($theme-colors, "dark-gray"));
+	filter: drop-shadow(0 0 0.75rem #9fa4ad);
 }
 
 .portfolio-item {
