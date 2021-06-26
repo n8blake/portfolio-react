@@ -5,15 +5,16 @@ import Nav from "./components/Nav";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import NoMatch from "./pages/NoMatch";
+import Footer from "./components/Footer";
 import "./App.scss";
 
 function App(props) {
   return (
-    <div >
+    <span >
       <Header />
       <Router>
         <Nav />
-        <div className="container">
+        <main className="container">
         <Switch>
           <Route exact path={["/", "/about"]}>
             <About />
@@ -25,9 +26,10 @@ function App(props) {
             <NoMatch />
           </Route>
         </Switch>
-        </div>
+        </main>
       </Router>
-    </div>
+      <Footer />
+    </span>
   );
 }
 

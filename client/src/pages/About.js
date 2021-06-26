@@ -11,7 +11,8 @@ function About(){
         <section className="section active" id="about-section">
 			<img className="about-image" src={portrait} />
 			<p>Hi, I'm Nate Blake. I'm a freelance graphic artist and web developer. </p>
-			<p>I specialize in high quaility, visually engaging and artistic single-page web applications. I use a variety of tools and technologies to bring the best of what the industry has to offer to any project I work on. If you are interested in working with me please <a href="mailto: hello@blake-ink.com">shoot me an email!</a></p>
+			<p>I specialize in high quaility, visually engaging and artistic single-page web applications. I use a variety of tools and technologies to bring the best of what the industry has to offer to any project I work on.</p>
+            <p> If you are interested in working with me please <a href="mailto: hello@blake-ink.com">shoot me an email!</a></p>
             <hr />
             <div>
                 <h3>Design &amp; Development Philosophy</h3>
