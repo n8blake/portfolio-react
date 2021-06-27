@@ -1,0 +1,15 @@
+@import '../../theme-colors.scss';
+
+header {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.name-hero {
+	text-transform: lowercase;
+	color: map-get($theme-colors, "primary");
+	font-size: 28pt;
+	font-weight: bolder;
+	margin: 40pt 0pt;
+}

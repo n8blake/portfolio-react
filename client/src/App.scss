@@ -1,0 +1,33 @@
+@import 'theme-colors.scss';
+
+* {
+	display: relative;
+}
+
+body {
+	font-family: soleil, Lato, futura, sans-serif;
+	font-style: normal;
+}
+
+header {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 150pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	color: map-get($theme-colors, "primary");
+}
+
+p {
+	font-weight: 300;
+	font-size: 16pt;
+	line-height: 28pt;
+}

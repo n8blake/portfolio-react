@@ -1,0 +1,81 @@
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import '../../theme-colors.scss';
+
+/* footer styles */
+.footer-text {
+	color: map-get($theme-colors, "dark-gray");;
+	font-weight: lighter;
+	font-size: 12pt;
+	line-height: 18pt;
+	text-transform: lowercase;
+}
+
+.twitter::before {
+	@extend %fa-icon;
+	@extend .fab;
+	content: fa-content($fa-var-twitter);
+	display: block;
+}
+
+.instagram::before {
+	@extend %fa-icon;
+	@extend .fab;
+	content: fa-content($fa-var-instagram);
+	display: block;
+}
+
+.youtube::before {
+	@extend %fa-icon;
+	@extend .fab;
+	content: fa-content($fa-var-youtube);
+	display: block;
+}
+
+.github::before {
+	@extend %fa-icon;
+	@extend .fab;
+	content: fa-content($fa-var-github);
+	display: block;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0pt;
+	text-align: center;
+	padding-bottom: 40pt;
+	padding-top: 10pt;
+	width: 100%;
+	height: 110pt;
+	background-color: none;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+footer div a {
+	flex: 1;
+	color: map-get($theme-colors, "dark-gray");
+	text-decoration: none;
+	font-size: 10pt;
+	padding: 10pt;
+	transition: color 0.5s;
+	transition-timing-function: ease-in-out;
+	&:before {
+		display: block;
+		font-size: 30pt;
+		margin-bottom: 5pt;
+	}
+}
+
+footer div a:hover {
+	color: map-get($theme-colors, "primary");
+}
+
+.footer-links {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: between;
+}

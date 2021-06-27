@@ -1,0 +1,13 @@
+$theme-colors:(
+	"primary": #023859,
+	"dark-gray": #9fa4ad,
+	"light": #EFEFEF,
+);
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}

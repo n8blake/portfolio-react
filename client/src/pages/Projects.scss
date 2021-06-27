@@ -1,0 +1,169 @@
+@import '../theme-colors.scss';
+
+.modal-backdrop {
+	background-color: #0000;
+	opacity: 1;
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0pt;
+}
+
+.enlarged-screen-shot {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-height: 90%;
+	max-width: 90%;
+	filter: drop-shadow(0 0 0.75rem #9fa4ad);
+}
+
+.portfolio-item {
+	width: 100%;
+	max-width: 100%;
+	padding: 20pt;
+	border-bottom: solid;
+	border-color: map-get($theme-colors, "light");
+	border-width: 1px;
+	padding: 20pt 0pt;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+
+.portfolio-item>a>img {
+	display: inline;
+	width: 25vw;
+	height: 25vw;
+	margin-right: 20pt;
+	border-radius: 6pt;
+}
+
+
+.item-title, .item-description {
+	padding: 10pt 0pt;
+	font-size: 18pt;
+}
+
+.item-title {
+	font-weight: bolder;
+}
+
+.item-description {
+	display: inline;
+	font-size: 14pt;
+	line-height: 20pt;
+	padding: 0pt;
+	justify-content: left;
+}
+
+.name-hero {
+	text-transform: lowercase;
+	color: map-get($theme-colors, "primary");
+	font-size: 28pt;
+	font-weight: bolder;
+	margin: 40pt 0pt;
+}
+
+.item-text {
+	left: 40%;
+	max-width: 60%;
+	margin-bottom: 10pt;
+}
+
+.item-text>a {
+	display: block;
+	margin-top: 20pt;
+}
+
+.item-text>a>img {
+	width: 50%;
+}
+
+.item-badges {
+	display: block;
+	margin-top: 10pt;
+}
+
+.portfolio-badge {
+	display: inline;
+	text-decoration: none;
+	text-align: center;
+	font-size: 8pt;
+	font-weight: lighter;
+	background-color: map-get($theme-colors, "primary");
+	color: map-get($theme-colors, "light");
+	flex: 1 1 50pt;
+	padding: 4pt 8pt;
+	border-radius: 16pt;
+	margin-right: 10pt;
+}
+
+p>a {
+	text-decoration: none;
+	color: tint(map-get($theme-colors, "primary"), 20%);
+}
+
+p>a:hover {
+	color: shade(map-get($theme-colors, "primary"), 20%);
+	text-decoration: underline;
+}
+
+p>a:active {
+	color: shade(map-get($theme-colors, "primary"), 60%);
+}
+
+a.portfolio-link {
+	display: flex;
+	flex-direction:row;
+	text-transform: uppercase;
+    justify-content: center;
+	width: 50%;
+	text-decoration: none;
+	padding: 10pt;
+	border-style: solid;
+	border-width: 1pt;
+	border-radius: 5pt;
+	color: map-get($theme-colors, "primary");
+	border-color: map-get($theme-colors, "primary");
+	transition: all 0.25s;
+	transition-property: color, border-color, background-color;
+	transition-timing-function: ease-in-out;
+}
+
+a.portfolio-link>span {
+	margin-right: 10pt;
+}
+
+a.portfolio-link:hover {
+	background-color: map-get($theme-colors, "primary");
+	color: #FFF;
+}
+
+a.portfolio-link:active {
+	background-color: shade(map-get($theme-colors, "primary"), 30%);
+	border-color: shade(map-get($theme-colors, "primary"), 40%);
+}
+
+img.screen-shot-thumbnail {
+	max-height: 128pt;
+	margin-top: 20pt;
+	border: solid 1pt;
+	border-color: map-get($theme-colors, "light");
+	border-radius: 2pt;
+	padding: 4pt;
+}
+
+@media screen and (max-width: 500px) {
+	.screen-shot-thumbnail {
+		max-width: 50vw;
+	}
+
+	.portfolio-badge {
+		display: block;
+		margin-bottom: 10pt;
+	}
+}

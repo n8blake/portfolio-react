@@ -1,0 +1,38 @@
+@import '../theme-colors.scss';
+
+section>img {
+	width: 150pt;
+	height: 150pt;
+	border-radius: 50%;
+	float: left;
+	margin: 20pt; 
+	margin-left: 0pt;
+	shape-outside: circle(50%);
+}
+
+.section.active {
+	display: block;
+}
+
+p>a {
+	text-decoration: none;
+	color: tint(#023859, 20%);
+}
+
+p>a:hover {
+	color: shade(#023859, 20%);
+	text-decoration: underline;
+}
+
+p>a:active {
+	color: shade(#023859, 60%);
+}
+
+@media screen and (max-width: 500px) {
+	.about-image {
+		display: block;
+		float: none;
+		margin: auto;
+		margin-bottom: 20pt;
+	}
+}
