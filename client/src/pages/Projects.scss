@@ -156,3 +156,14 @@ img.screen-shot-thumbnail {
 	border-radius: 2pt;
 	padding: 4pt;
 }
+
+@media screen and (max-width: 500px) {
+	.screen-shot-thumbnail {
+		max-width: 50vw;
+	}
+
+	.portfolio-badge {
+		display: block;
+		margin-bottom: 10pt;
+	}
+}

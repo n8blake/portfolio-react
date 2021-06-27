@@ -35,3 +35,16 @@ nav>a {
 	border-color: map-get($theme-colors, "primary");
 	stroke-linecap: round;
 }
+@media screen and (max-width: 700px) {
+
+	nav {
+		width: 100%;
+	}
+
+	nav>a {
+		flex: 1;
+		font-size: 5vw;
+	}
+
+
+}

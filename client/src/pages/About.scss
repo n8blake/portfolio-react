@@ -27,3 +27,12 @@ p>a:hover {
 p>a:active {
 	color: shade(#023859, 60%);
 }
+
+@media screen and (max-width: 500px) {
+	.about-image {
+		display: block;
+		float: none;
+		margin: auto;
+		margin-bottom: 20pt;
+	}
+}
