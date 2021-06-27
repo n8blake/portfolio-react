@@ -90,7 +90,7 @@ function Projects(){
                                         {project.badges.map(badge => {
                                             let badgeClassName = "";
                                             if(badge.showLabel) badgeClassName = "portfolio-badge"
-                                            return (<a key={badge.label} className={badgeClassName}>
+                                            return (<a key={badge.label} href={badge.link} className={badgeClassName}>
                                             {badge.image ? (
                                                 <img src={"/images/" + badge.image}></img>
                                             ) : (
